@@ -1,0 +1,35 @@
+#Import all necessary packages for Logistic regression analysis:  Pandas, numpy, matplotlib,train_test_split,XGboost,Multinomial NB
+
+
+#Define the dataset with good variables:
+Upload a dataset that shows the (Y)dependent variable - categorical overall performance of candidates(Good or Not Good) 
+The (X) indepedendent variable having categorical and numerical variables to judge Y are: -
+- The numerical variables comprising of: 
+  a. Under Graduation, 
+  b. 12th in percent, 
+  c. 10th in percent & 
+  d. Work experience in months  
+- The independent categorical variable comprising of : 
+  a. Gender (female or male)
+  
+  
+#Data cleaning:-
+Convert the character names of categorical columns into category variables using ".astype(category)". This produces results as 0,1,2,3,4 or 5 etc.
+Do a short EDA Analysis like the count of dependent categorical variables - performance using seaborn plot() function
+
+
+#Main modelling work:- 
+Once the EDA(Exploratory Data Analysis) is done, divide the data in two pairs of train and test both for X and Y variables.
+So there will be Y Train, Y test, X train and X test. 
+
+Derive a logitmodel using sm.Logit() function for X Train and Y Train data. 
+Derive Xgboost model from X Train and Y train data using XGBClassifier() function. 
+Derive the Multinomial naive bayes model using "MultinomialNB().fit" for the same.
+
+#Results of the model by testing it:-
+Find the summary for all the 3 models using model.summary(). 
+Run all the 3 models on test data get the accuracy by using .predict() and accuracy_score() functions
+
+Come up with a classification report of accuracy defined in terms of precision,recall and f1 score. 
+
+Decide which is the suitable model out of the 3 models & derive conclusion.  
