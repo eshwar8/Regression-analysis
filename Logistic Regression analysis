@@ -18,6 +18,7 @@ Convert the character names of categorical columns into category variables using
 Do a short EDA Analysis like the count of dependent categorical variables - performance using seaborn plot() function
 
 
+
 #Main modelling work:- 
 Once the EDA(Exploratory Data Analysis) is done, divide the data in two pairs of train and test both for X and Y variables.
 So there will be Y Train, Y test, X train and X test. 
@@ -25,6 +26,8 @@ So there will be Y Train, Y test, X train and X test.
 Derive a logitmodel using sm.Logit() function for X Train and Y Train data. 
 Derive Xgboost model from X Train and Y train data using XGBClassifier() function. 
 Derive the Multinomial naive bayes model using "MultinomialNB().fit" for the same.
+
+
 
 #Results of the model by testing it:-
 Find the summary for all the 3 models using model.summary(). 
